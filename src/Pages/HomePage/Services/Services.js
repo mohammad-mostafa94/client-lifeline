@@ -8,19 +8,19 @@ import Service from './Service';
 
 const services = [
     {
-        name: "Fluoride Treatment",
-        description: "Fluoride treatments are typically professional treatments containing a high concentration of fluoride",
-        image: "https://i.ibb.co/3YR23tg/fluoride.png"
+        name: "Aged Care",
+        description: "If you or your family have moved address, need to change a representative or perhaps someone has passed away, please let us know.",
+        image: "https://i.ibb.co/GMbDQYH/aged-care.jpg"
     },
     {
-        name: "Cavity Filling",
-        description: "Fluoride treatments are typically professional treatments containing a high concentration of fluoride",
-        image: "https://i.ibb.co/gy82qqm/cavity.png"
+        name: "Mental Healthcare",
+        description: "The public health system reaches the population by extending government, private, and. NGO-sponsored health care providers, hospitals, health centers ",
+        image: "https://i.ibb.co/SmF2rrM/Mental-Healthcare.jpg"
     },
     {
-        name: "Teath Whitening",
-        description: "Fluoride treatments are typically professional treatments containing a high concentration of fluoride",
-        image: "https://i.ibb.co/2hxmDSB/whitening.png"
+        name: "Mental Portal",
+        description: "Mental Portal brings data on a comprehensive set of indicators relevant to technical programs from the Department of Noncommunicable ",
+        image: "https://i.ibb.co/8zgw9zX/Mental-Portal.jpg"
     },
 ]
 
@@ -30,7 +30,7 @@ const Services = () => {
             <Typography variant="h6" color="#00b0ff" sx={{ fontWeight: 600 }}>
                 OUR SERVICES
             </Typography>
-            <Typography Typography variant="h4" sx={{ fontWeight: 600 }}>
+            <Typography color="#fcff33" Typography variant="h4" sx={{ fontWeight: 600 }}>
                 Services We Provide
             </Typography>
             <Container>

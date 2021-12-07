@@ -24,9 +24,9 @@ const Banner = () => {
                     <Grid style={{ ...verticalCenter, textAlign: "left" }} item xs={12} md={6} >
                         <Box>
                             <Typography variant="h4">
-                                <span style={{ color: "blue", fontWeight: "bold" }}>Lifeline</span> combines advanced science,<br />
+                                <span style={{ color: "blue", fontWeight: "bold" }}>Lifeline</span> combines advanced science,
                                 expertise and passion to solve the world’s most serious health issues.
-                                <br /> Booking Here
+                                <br /> <span className="text-warning fs-2 fw-bold">Booking Here</span>
                             </Typography>
                             <Link style={{ textDecoration: "none" }} to="/appointment">
                                 <Button style={{ backgroundColor: "#fcff33", padding: "6px", borderRadius: "4px", marginTop: "15px" }}>Get Appointment</Button>

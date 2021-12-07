@@ -2,7 +2,6 @@ import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
-import login from '../../images/login.png';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
@@ -24,7 +23,7 @@ const Login = () => {
     }
     return (
         <Container>
-            <Grid container spacing={2}>
+            <Grid className="text-center" container spacing={2}>
                 <Grid item xs={12} md={6}>
                     <Typography sx={{ mt: 8, mb: 5 }} variant="h5" gutterBottom>
                         Login
@@ -50,11 +49,10 @@ const Login = () => {
                             onBlur={handleChange}
                         />
 
-                        <Button style={{ width: "90%" }} type="submit" variant="contained">Login</Button>
+                        <Button style={{ width: "90%", margin: "5px", backgroundColor: "yellow", color: "black" }} type="submit">Login</Button>
 
                         <Link style={{ textDecoration: "none" }} to="/register">
-
-                            <Button className="mt-3" variant="text">New User ? Please Register</Button>
+                            <Button className="mt-3 text-warning " variant="text">New User ? Please Click here(Register)</Button>
                         </Link>
 
                     </form>
@@ -65,7 +63,7 @@ const Login = () => {
                     }
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <img className="mw-100 mh-100" src={login} alt="" />
+                    <img className="mw-100 mh-100" src="https://i.ibb.co/dQfB8jn/doctor-login.webp" alt="" />
                 </Grid>
             </Grid>
         </Container>

@@ -2,7 +2,6 @@ import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
-import login from '../../../images/login.png';
 
 
 const Register = () => {
@@ -10,7 +9,7 @@ const Register = () => {
     const { registerUser, isLoading, authError, user, googleSignIn } = useAuth();
     const [loginData, setLoginData] = useState({});
 
-    const location = useLocation()
+    const location = useLocation();
     const history = useNavigate();
 
     const handleOnBlur = e => {
@@ -35,7 +34,7 @@ const Register = () => {
     return (
         <Container>
             <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
+                <Grid className="text-center" item xs={12} md={6}>
                     <Typography sx={{ mt: 8, mb: 5 }} variant="h5" gutterBottom>
                         Registration Form
                     </Typography>
@@ -77,14 +76,14 @@ const Register = () => {
                             name="password2"
                             onBlur={handleOnBlur}
                         />
-                        <Button sx={{ width: "90%", mt: 1 }} type="submit" variant="contained">Registration</Button>
+                        <Button sx={{ width: "90%", mt: 1, backgroundColor: "yellow", color: "black" }} type="submit" variant="contained">Registration</Button>
 
                         <Link style={{ textDecoration: "none" }} to="/login">
 
-                            <Button className="mt-3" variant="text">Already register ? Please Login</Button>
+                            <Button className="mt-3 text-warning" >Already register ? Please Login</Button>
                         </Link>
 
-                        <Button sx={{ width: "90%", mt: 1 }} onClick={handleGoogleSignIn} variant="contained">google</Button>
+                        <Button sx={{ width: "90%", mt: 1, backgroundColor: "yellow", color: "black" }} onClick={handleGoogleSignIn} variant="contained">google</Button>
                     </form>}
                     {isLoading && <CircularProgress />}
                     {
@@ -95,7 +94,7 @@ const Register = () => {
                     }
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <img className="mw-100 mh-100" src={login} alt="" />
+                    <img className="mw-100 mh-100" src="https://i.ibb.co/dQfB8jn/doctor-login.webp" alt="" />
                 </Grid>
             </Grid>
         </Container>

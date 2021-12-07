@@ -32,7 +32,7 @@ function Dashboard(props) {
 
             {
                 admin && <span>
-                    {/* <Link color="inherit" to={`/dashboard/makeAdmin`}><Button >Make Admin</Button></Link> */}
+                    <Button ><Link style={{ textDecoration: "none", backgroundColor: "yellow", color: "black" }} to={`/dashboard/makeAdmin`}>Make Admin</Link></Button>
                     <Link style={{ textDecoration: "none" }} color="inherit" to={`/dashboard/addDoctor`}><Button >Add Doctor</Button></Link>
                     <br />
                     <Link style={{ textDecoration: "none" }} color="inherit" to={`/dashboard/addStaff`}><Button >Add Staff</Button></Link>

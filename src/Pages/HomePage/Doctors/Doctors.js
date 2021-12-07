@@ -14,7 +14,7 @@ const Doctors = () => {
 
     return (
         <div className="text-center">
-            <h2>Our Doctors: {doctors.length}</h2>
+            <h2>Today available Doctors: {doctors.length}</h2>
             <Container>
                 <Grid container spacing={2}>
                     {

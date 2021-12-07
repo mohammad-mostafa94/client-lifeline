@@ -8,7 +8,7 @@ const Doctor = ({ doctor }) => {
             <img
                 style={{ width: '200px', height: '200px' }}
                 src={`data:image/png;base64,${image}`} alt="" />
-            <h3>{name}</h3>
+            <h3>Dr.{name}</h3>
         </Grid>
     );
 };

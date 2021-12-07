@@ -32,7 +32,7 @@ const AppointmentBanner = () => {
                     }} item xs={12} md={6}>
                         <Box>
                             <Typography Typography variant="h4"
-                                style={{ color: "#00b0ff" }}>
+                                style={{ color: "#fcff33" }}>
                                 Appointment </Typography>
 
                             <Typography variant="h4" style={{ margin: "45px 0", fontWeight: "700", color: "white" }}>
@@ -41,8 +41,8 @@ const AppointmentBanner = () => {
                                 *Please note: we do not accept bookings for children’s appointments online.
                                 Please call the salon at +0123456789 to book an appointment for your child.
                             </Typography>
-                            <Button style={{ backgroundColor: "#33FFF9", padding: "6px", borderRadius: "4px" }}>
-                                <Link to="/appointment">
+                            <Button style={{ backgroundColor: "#fcff33", padding: "6px", borderRadius: "4px" }}>
+                                <Link style={{ textDecoration: "none" }} to="/appointment">
                                     Book Appointment
                                 </Link>
                             </Button>
